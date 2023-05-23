@@ -18,6 +18,12 @@ class Tareas {
     this._listado = {};
   }
 
+  crearTareasFromArray(tareas = []) {
+    tareas.forEach((tarea) => {
+      this._listado[tarea.id] = tarea;
+    });
+  }
+
   get listadoArr() {
     const listado = [];
 
@@ -32,6 +38,23 @@ class Tareas {
   crearTarea(desc = "") {
     const tarea = new Tarea(desc);
     this._listado[tarea.id] = tarea;
+  }
+
+  listadoCompleto() {
+    console.log();
+    // segundo argumento forEach es indice
+    Object.keys(this._listado).forEach((key, index) => {
+      const tarea = this._listado[key];
+      if (tarea.compleatoEn) {
+        console.log(
+          `${index + 1}. `.green + `${tarea.desc} :: ${"Completada".green}`
+        );
+      } else {
+        console.log(
+          `${index + 1}. `.red + `${tarea.desc} :: ${"Pendiente".red}`
+        );
+      }
+    });
   }
 }
 
