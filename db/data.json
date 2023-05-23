@@ -2,11 +2,16 @@
   {
     "id": "8a281153-71b8-4c0a-94da-dfe1290ea0d3",
     "desc": "Javascript",
-    "compleatoEn": null
+    "compleatoEn": "12341234"
   },
   {
     "id": "5953fe30-f7bf-4bca-a6e0-85b63b71f8d1",
     "desc": "React JS",
+    "compleatoEn": null
+  },
+  {
+    "id": "44c31904-5140-4533-92f8-877ebf3a8049",
+    "desc": "Go",
     "compleatoEn": null
   }
 ]
