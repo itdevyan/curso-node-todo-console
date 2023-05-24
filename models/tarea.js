@@ -3,12 +3,12 @@ const { v4: uudiv4 } = require("uuid");
 class Tarea {
   id = "";
   desc = "";
-  compleatoEn = null;
+  completadoEn = null;
 
   constructor(desc) {
     this.id = uudiv4();
     this.desc = desc;
-    this.compleatoEn = null;
+    this.completadoEn = null;
   }
 }
 
